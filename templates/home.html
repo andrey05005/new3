@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>Welcome, {{ username }}!</h1>
-        <p>This is the home page. You are logged in.</p>
-        <a href="/logout">Logout</a>
+        <p>Your current balance is: <strong>$978.32</strong></p>
+        <button onclick="window.location.href='/withdrawpage';">Withdraw Balance</button>
     </div>
 </body>
 </html>

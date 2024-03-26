@@ -30,5 +30,8 @@ def logout():
     session.pop('username', None)
     return redirect(url_for('home'))
 
+@app.route('/withdrawpage')
+def withdrawpage():
+    return render_template('withdraw.html')
 if __name__ == '__main__':
     app.run(debug=True)
